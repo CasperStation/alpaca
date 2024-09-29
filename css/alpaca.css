@@ -1,0 +1,973 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.body {
+  background-color: #ff528b;
+}
+
+.section_hero {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.hero_floor {
+  background-image: url('../fonts/hero_bottom.svg');
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  inset: auto 0% -5%;
+}
+
+.div-block {
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 250px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.hero_paca {
+  z-index: 1;
+  height: 90%;
+  margin-right: 0;
+  position: relative;
+  inset: auto auto -5%;
+}
+
+.hero_logo {
+  height: 35%;
+  margin-left: 15px;
+  position: relative;
+  inset: auto auto 33%;
+}
+
+.header {
+  z-index: 20;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 25px 25px;
+  display: flex;
+  position: absolute;
+  inset: 0% 0% auto;
+}
+
+.header_bar {
+  background-color: #d83071;
+  border: 2px #000;
+  border-top: 7px solid #a62054;
+  border-bottom: 3px solid #ff92bc;
+  border-radius: 9px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  display: flex;
+}
+
+.hero_block {
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  inset: auto auto 0%;
+}
+
+.hero_quote {
+  height: 12%;
+  position: absolute;
+  inset: 18% auto auto 31%;
+  transform: rotate(-9deg);
+}
+
+.block_ca {
+  z-index: 3;
+  background-color: #ff3985;
+  border: 2px solid #000;
+  border-bottom-width: 5px;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 65px;
+  margin: 15px;
+  padding: 7.5px;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 10% auto;
+  transform: rotate(-1deg);
+}
+
+.ca_in {
+  background-color: #b31a55;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+
+.ca {
+  color: #ffe5ef;
+  font-family: Comic Kings, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.header_left {
+  justify-content: flex-start;
+  align-items: center;
+  height: 45px;
+  display: flex;
+}
+
+.header_right {
+  height: 40px;
+  display: flex;
+}
+
+.menu_link {
+  color: #fff;
+  background-color: #0000;
+  margin-right: 28px;
+  padding: 0;
+  font-family: Comic Kings, sans-serif;
+  font-size: 20px;
+}
+
+.menu_link:hover {
+  color: #9f1945;
+}
+
+.banner {
+  z-index: 10;
+  background-color: #fff1e8;
+  border: 1px #000;
+  width: 100%;
+  height: 70px;
+  margin-top: -1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  transform: skew(0deg, -4deg);
+}
+
+.section_about {
+  z-index: -1;
+  background-color: #150e11;
+  background-image: linear-gradient(#150e11, #0000), url('../images/stars.gif');
+  background-position: 0 0, 50%;
+  background-size: auto, 400px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 75px;
+  display: flex;
+  position: relative;
+}
+
+.div-block-3 {
+  background-color: #ba2d5b;
+  width: 100%;
+  height: 100%;
+}
+
+.div-block-4 {
+  background-color: #d83071;
+  width: 100%;
+  height: 50px;
+}
+
+.hero_fur {
+  z-index: 2;
+  background-image: url('../fonts/transition_fur_1.svg');
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 101%;
+  height: 70px;
+  position: absolute;
+  inset: auto 0% 0%;
+  transform: skew(0deg, -4deg);
+}
+
+.banner_in {
+  background-color: #fff1e8;
+  border: 1px #000;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.fur_1_bottom {
+  z-index: 2;
+  transform-style: preserve-3d;
+  background-image: url('../fonts/transition_fur_1.svg');
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 101%;
+  height: 70px;
+  margin-top: -1px;
+  position: static;
+  inset: auto 0% 0%;
+  transform: rotateX(-180deg)rotateY(0)rotateZ(0)skew(0deg, 4deg);
+}
+
+.banner_hider {
+  background-color: #150e11;
+  width: 100%;
+  height: 100px;
+  margin-top: -103px;
+}
+
+.banner_title {
+  font-family: Comic Kings, sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.h1 {
+  text-align: center;
+  font-family: Comic Kings, sans-serif;
+  font-size: 100px;
+  line-height: 80px;
+  position: relative;
+}
+
+.banner_1 {
+  position: relative;
+}
+
+.block_para {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 650px;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+.para {
+  text-align: center;
+  margin-bottom: 0;
+  font-family: Comic Kings, sans-serif;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.paca_sun {
+  height: 850px;
+  margin-top: 0;
+  position: relative;
+}
+
+.section_tokenomics {
+  background-color: #ff528b;
+  background-image: linear-gradient(#fff 17%, #ff528b 58%);
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+  padding-bottom: 0;
+  display: flex;
+  position: relative;
+}
+
+.clouds {
+  background-image: url('../fonts/about_clouds2.svg');
+  background-position: 10% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  width: 150vw;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  inset: -12% 0% auto;
+}
+
+.board_tokenomics {
+  background-color: #934b15;
+  border: 3px solid #000;
+  border-radius: 8px;
+  width: 800px;
+  height: 450px;
+  padding: 17px;
+  position: relative;
+}
+
+.tokenomics_in {
+  background-color: #2d2d2d;
+  border: 3px solid #000;
+  border-radius: 8px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  position: relative;
+}
+
+.paca_tokenomics {
+  height: 450px;
+  margin-top: -162px;
+  position: relative;
+}
+
+.tokenomics_floor {
+  flex-flow: column;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.tokenomics_floor_top {
+  background-color: #aa1a55;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  height: 30px;
+}
+
+.tokenomics_floor_bottom {
+  background-color: #cc3e71;
+  flex: auto;
+}
+
+.block_para_2 {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 650px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.banner_2 {
+  z-index: 10;
+  background-color: #fff1e8;
+  border: 1px #000;
+  width: 100%;
+  height: 70px;
+  margin-top: -1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  transform: skew(0deg, 4deg);
+}
+
+.fur_2_bottom {
+  z-index: 2;
+  transform-style: preserve-3d;
+  background-image: url('../fonts/transition_fur_1.svg');
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 101%;
+  height: 70px;
+  margin-top: -1px;
+  position: static;
+  inset: auto 0% 0%;
+  transform: rotateX(-180deg)rotateY(0)rotateZ(0)skew(0deg, -4deg);
+}
+
+.tokenomics_fur {
+  z-index: 2;
+  background-image: url('../fonts/transition_fur_1.svg');
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 101%;
+  height: 70px;
+  position: absolute;
+  inset: auto 0% 0%;
+  transform: skew(0deg, 4deg);
+}
+
+.banner2_hider {
+  background-color: #ff528b;
+  width: 100%;
+  height: 100px;
+  margin-top: -103px;
+}
+
+.board_text {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Teacher, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  transform: rotate(-2deg);
+}
+
+.bold-text {
+  color: #e0e0e0;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.board_text_2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Teacher, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  transform: rotate(2deg);
+}
+
+.bold-text-2 {
+  color: #e0e0e0;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.image {
+  height: 100px;
+  margin: 25px;
+  position: absolute;
+  inset: auto 0% 0% auto;
+}
+
+.para_pink {
+  color: #ff528b;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: Comic Kings, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.h1_2 {
+  color: #fff;
+  text-align: center;
+  font-family: Comic Kings, sans-serif;
+  font-size: 100px;
+  line-height: 80px;
+  position: relative;
+}
+
+.div-block-5 {
+  height: 300px;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.image-2 {
+  height: 100%;
+}
+
+.div-block-6 {
+  margin-top: -150px;
+  position: relative;
+}
+
+.sun {
+  z-index: 1;
+  mix-blend-mode: normal;
+  position: absolute;
+  inset: -14% -8% auto auto;
+}
+
+.section_how {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.chara_how {
+  height: 500px;
+  margin-top: -215px;
+  position: relative;
+}
+
+.div-block-7 {
+  background-color: #a52559;
+  border: 4px #000;
+  border-top: 3px solid #000;
+  border-bottom-width: 3px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 88px;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.block_para_3 {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 650px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  position: relative;
+}
+
+.text-span {
+  color: #ffe5ef;
+}
+
+.div-block-8 {
+  background-color: #d83a77;
+  height: 145px;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.div-block-9 {
+  background-image: url('../fonts/windows.svg');
+  background-position: 50% 100%;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+  position: static;
+}
+
+.transition_desk {
+  background-color: #5b1d39;
+  width: 100%;
+  height: 30px;
+}
+
+.image-3 {
+  z-index: 2;
+  height: 85%;
+  margin-top: -1px;
+  position: absolute;
+  left: 745.3px;
+}
+
+.section_footer {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 75px;
+  display: flex;
+  position: relative;
+}
+
+.chara_footer {
+  pointer-events: none;
+  height: 500px;
+  margin-top: -42px;
+  position: relative;
+}
+
+.div-block-11 {
+  background-color: #cc3a6a;
+  border: 3px solid #000;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  position: relative;
+}
+
+.socials_header {
+  background-color: #fc3883;
+  border: 3px solid #000;
+  border-bottom-width: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  margin-left: 10px;
+  padding: 0;
+  font-family: Comic Kings, sans-serif;
+  font-size: 20px;
+  display: flex;
+}
+
+.socials_header:hover {
+  border-top-width: 5px;
+  border-bottom-width: 3px;
+}
+
+.div-block-12 {
+  background-color: #b31a55;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.copy {
+  background-color: #b31a55;
+  background-image: url('../fonts/copy.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  border-radius: 8px;
+  width: 43px;
+  height: 43px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.buttons_footer {
+  background-color: #fc3883;
+  border: 3px solid #000;
+  border-bottom-width: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 45px;
+  margin-left: 10px;
+  padding: 0;
+  font-family: Comic Kings, sans-serif;
+  font-size: 20px;
+  display: flex;
+}
+
+.buttons_footer:hover {
+  border-top-width: 5px;
+  border-bottom-width: 3px;
+}
+
+.footer_ground {
+  background-color: #d83a77;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.footer_fur {
+  background-image: url('../fonts/transition_fur_1.svg');
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  inset: auto 0% 55px;
+}
+
+.footer_links {
+  background-color: #fff1e8;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.h4 {
+  font-family: Comic Kings, sans-serif;
+  font-size: 20px;
+}
+
+.naga {
+  color: #000;
+  background-color: #0000;
+  padding: 0;
+  font-family: Comic Kings, sans-serif;
+  font-size: 20px;
+}
+
+.naga:hover {
+  color: #ff528b;
+}
+
+.hero_block_mobile {
+  display: none;
+}
+
+.ca_mobile {
+  color: #ffe5ef;
+  font-family: Comic Kings, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .hero_paca {
+    height: 70%;
+  }
+
+  .hero_block {
+    display: none;
+  }
+
+  .block_ca {
+    bottom: 2%;
+    right: auto;
+  }
+
+  .header_left {
+    display: none;
+  }
+
+  .header_right {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu_link {
+    display: none;
+  }
+
+  .board_tokenomics {
+    width: 90%;
+  }
+
+  .image-3 {
+    left: 365px;
+  }
+
+  .socials_header {
+    margin-left: 0;
+  }
+
+  .hero_block_mobile {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    inset: 0%;
+  }
+
+  .image-4 {
+    height: 75%;
+    position: absolute;
+    inset: auto auto 0%;
+  }
+
+  .image-5 {
+    width: 90%;
+    margin-top: 80px;
+    position: absolute;
+    inset: 0% auto auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ca {
+    display: none;
+  }
+
+  .h1 {
+    font-size: 60px;
+  }
+
+  .block_para {
+    width: 90%;
+  }
+
+  .paca_sun {
+    height: 700px;
+  }
+
+  .paca_tokenomics {
+    width: 90%;
+    height: auto;
+  }
+
+  .block_para_2 {
+    width: 90%;
+  }
+
+  .bold-text {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .h1_2 {
+    font-size: 80px;
+    line-height: 65px;
+  }
+
+  .chara_how {
+    width: 90%;
+    height: auto;
+  }
+
+  .block_para_3 {
+    width: 90%;
+  }
+
+  .div-block-9 {
+    height: 250px;
+    margin-top: 25px;
+  }
+
+  .image-3 {
+    height: 70%;
+    left: 229px;
+  }
+
+  .chara_footer {
+    z-index: 0;
+    height: 400px;
+  }
+
+  .div-block-11 {
+    flex-flow: column;
+    width: 90%;
+  }
+
+  .buttons_footer {
+    width: 100%;
+    height: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+  }
+
+  .footer_fur, .footer_links {
+    z-index: 5;
+  }
+
+  .image-4 {
+    height: 70%;
+    margin-right: 50px;
+  }
+
+  .ca_mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .banner_title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .paca_sun {
+    width: 90%;
+    height: auto;
+  }
+
+  .clouds {
+    height: 150px;
+    top: -10%;
+  }
+
+  .board_text {
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .bold-text {
+    line-height: 35px;
+  }
+
+  .h1_2 {
+    font-size: 65px;
+    line-height: 55px;
+  }
+
+  .div-block-5 {
+    width: 150%;
+    height: auto;
+    margin-left: -25%;
+  }
+
+  .div-block-6 {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .section_how {
+    padding-top: 25px;
+  }
+
+  .image-3 {
+    height: 55%;
+    margin-top: 19px;
+    left: 161px;
+  }
+
+  .socials_header {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .naga {
+    text-align: right;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .image-4 {
+    width: 80%;
+    height: auto;
+    margin-right: 20px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Comic Kings';
+  src: url('../fonts/Comic-Kings.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Teacher';
+  src: url('../fonts/teacher.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
